@@ -1,0 +1,41 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Lixagram</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head><body>
+<div id="loginGate">
+ <form class="login-card" id="loginForm">
+  <div class="login-brand">Lixagram</div><h2 id="loginTitle">Iniciá sesión</h2><p id="loginSub">Entrá a tu mundo y compartí tus momentos.</p>
+  <label>Correo electrónico<input id="loginEmail" type="email" placeholder="tu@correo.com" autocomplete="email" required></label>
+  <label>Contraseña<input id="loginPass" type="password" placeholder="Mínimo 6 caracteres" autocomplete="current-password" minlength="6" required></label>
+  <p class="login-error" id="loginError"></p><button class="btn" id="loginSubmit">Iniciar sesión</button>
+  <button class="login-switch" id="loginToggle" type="button">¿No tenés cuenta? Crear una</button>
+  <small style="display:block;text-align:center;color:#888;margin-top:12px">Demo local: no se envían tus datos a ningún servidor.</small>
+ </form>
+</div>
+
+
+
+
+<nav class="side" aria-label="Navegación principal">
+<div class="logo">Lixagram</div>
+<button class="nb on" data-a="nav" data-v="inicio"><i data-i="home"></i><span class="lbl">Inicio</span></button>
+<button class="nb" data-a="nav" data-v="buscar"><i data-i="search"></i><span class="lbl">Buscar</span></button>
+<button class="nb" data-a="create" data-t="Foto"><i data-i="plus"></i><span class="lbl">Crear</span></button>
+<button class="nb" data-a="nav" data-v="reels"><i data-i="reel"></i><span class="lbl">Reels</span></button>
+<button class="nb" data-a="nav" data-v="mensajes"><i data-i="msg"></i><span class="lbl">Mensajes</span></button>
+<button class="nb" data-a="nav" data-v="perfil"><i data-i="user"></i><span class="lbl">Perfil</span></button>
+</nav>
+<header class="top"><div class="logo">Lixagram</div><div><button data-a="create" data-t="Foto" aria-label="Crear"><i data-i="plus"></i></button><button data-a="nav" data-v="mensajes" aria-label="Mensajes"><i data-i="msg"></i></button></div></header>
+<main class="main">
+<section class="view on" id="v-inicio"></section>
+<section class="view" id="v-buscar"><div class="sbar"><i data-i="search"></i><input id="sq" placeholder="Buscar usuarios o contenido" autocomplete="off" aria-label="Buscar"></div><div id="sres"></div></section>
+<section class="view" id="v-reels"></section>
+<section class="view" id="v-mensajes"></section>
+<section class="view" id="v-perfil"></section>
+</main>
+<div class="toast" id="toast" hidden></div>
+<script src="js/script.js"></script>
+
+</body></html>
